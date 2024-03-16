@@ -1,7 +1,7 @@
 scrape_configs:
   - job_name: nodes
     static_configs:
-      - targets: ['nodeexporter1:9100', 'nodeexporter2:9100']
+      - targets: ['nodeexporter1:9100', 'nodeexporter2:9200']
 
   - job_name: cadvisor
     scrape_interval: 5s

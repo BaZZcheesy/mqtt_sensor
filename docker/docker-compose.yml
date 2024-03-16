@@ -62,12 +62,16 @@ services:
   node-exporter1:
     image: prom/node-exporter
     container_name: nodeexporter1
+    ports:
+      - 9100:9100
     networks:
       - M321
 
   node-exporter2:
     image: prom/node-exporter
     container_name: nodeexporter2
+    ports:
+      - 9200:9200
     networks:
       - M321
 
