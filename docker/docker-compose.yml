@@ -95,17 +95,3 @@ services:
       - "/var/lib/docker/:/var/lib/docker:ro"
     networks:
       - M321
-
-  # alertmanager:
-  #   image: prom/alertmanager:v0.23.0
-  #   restart: unless-stopped
-  #   ports:
-  #     - "9093:9093"
-  #   volumes:
-  #     - "./files/alert-rules.yml:/config"
-  #     - alertmanager-data:/data
-  #   command: 
-  #     - '--config.file=/config/alertmanager.yml --log.level=debug'
-
-# volumes:
-#   alertmanager-data:

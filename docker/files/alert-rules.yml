@@ -6,6 +6,6 @@ groups:
     for: 15s
     labels:
       severity: critical
-    annotation:
+    annotations:
       summary: "Node down (instance {{ $labels.instance}})"
       description: "{{ $labels.instance }} down for +15 seconds."
